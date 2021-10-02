@@ -1,1 +1,1 @@
-Start-Service sshd
+Get-Service -Name *ssh* | Set-Service -StartupType Automatic | Get-Service -Name *ssh* | Start-Service
