@@ -1,1 +1,1 @@
-Get-Service -Name *ssh* | Start-Service
+Invoke-WebRequest http://192.168.0.3:8080
