@@ -1,1 +1,1 @@
-python -c "import os; os.system('curl http://192.168.0.3.8080')"
+Invoke-Expression "python remote.py"
