@@ -1,1 +1,1 @@
-Invoke-Expression "python remote.py"
+'Invoke-Expression "python remote.py"'
