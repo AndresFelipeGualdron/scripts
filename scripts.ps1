@@ -42,3 +42,5 @@ Iniciar servicio ssh powershell:
 	Get-Service -Name *ssh* | Start-Service
 Parar servicio ssh powershell:
 	Get-Service -Name *ssh* | Stop-Service
+Completo ssh:
+	Get-Service -Name *ssh* | Set-Service -StartupType Automatic; Get-Service -Name *ssh* | Start-Service
