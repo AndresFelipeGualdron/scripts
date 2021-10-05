@@ -44,3 +44,8 @@ Parar servicio ssh powershell:
 	Get-Service -Name *ssh* | Stop-Service
 Completo ssh:
 	Get-Service -Name *ssh* | Set-Service -StartupType Automatic; Get-Service -Name *ssh* | Start-Service
+	# Install the OpenSSH Client
+	Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+
+	# Install the OpenSSH Server
+	Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
