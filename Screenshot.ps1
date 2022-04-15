@@ -1,7 +1,5 @@
-function Main
+function Main($File)
 {
-    $File = "D:\Documents\temp\image.png"
-
     Add-Type -AssemblyName System.Windows.Forms
 
     Add-type -AssemblyName System.Drawing
@@ -20,8 +18,8 @@ function Main
 
     $bitmap.Save($File)
 
-    Write-Output "Screenshot saved to:"
+    Write-Output "Screenshot saved to: "
     Write-Output $File
 }
 
-Main
+Main($args[0])
