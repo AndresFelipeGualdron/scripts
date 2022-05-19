@@ -3,7 +3,7 @@ Para tener una shell manejable (IMPORTANTE QUE SEA EN BASH NO SZSH):
 	2. oprimir ctr+z
 	3. ejecutar = "stty raw -echo"
 	4. ejecutar = "fg" y damos enter (las letras "fg" no se van a ver)
-	5. ingresar "reset" y enter (el "reset" no se ve)
+	5. ingresar "reset xterm" y enter (el "reset" no se ve)
 	6. ejecutar = "export TERM=xterm"
 	7. ejecutar = "export SHELL=bash"
 para setear las proporciones de una shell:
